@@ -1,0 +1,131 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body,
+  ul {
+    padding: 0;
+    margin: 0;
+  }
+  
+  li {
+    list-style-type: none;
+  }
+  
+  /* design mobile first */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+  }
+  
+  main {
+    padding: 0 0.5rem;
+  }
+  
+  header .menu {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.8);
+    right: 0;
+    color: white;
+    width: 100%;
+    top: 87px;
+    padding: 1rem;
+    text-align: right;
+    display: none;
+    z-index: 2;
+    height: calc(100vh - 87px);
+  }
+  
+  header .menu.open {
+    display: block;
+  }
+  
+  header .menu li {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  header .menu li:last-child {
+    margin-bottom: 0;
+  }
+  
+  .logo {
+    width: 70px;
+    height: auto;
+  }
+  
+  .logo img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .hero {
+    display: none;
+  }
+  
+  .hero img {
+    width: 100%;
+    height: auto;
+  }
+  
+  h1 {
+    font-size: 1.5rem;
+  }
+  
+  .container-card {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .container-card .card {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  
+  .container-card .card img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .wraper {
+    padding: 0 1rem;
+  }
+  
+  @media screen and (min-width: 391px) {
+    .logo {
+      width: 150px;
+    }
+    .burger-icon {
+      display: none;
+    }
+    header .menu {
+      position: initial;
+      display: block;
+      background-color: initial;
+      padding: 0;
+      color: initial;
+      height: initial;
+    }
+    header .menu li {
+      display: inline-block;
+      margin-bottom: 0;
+      margin-right: 1rem;
+    }
+  
+    .hero {
+      display: initial;
+    }
+  
+    h1 {
+      font-size: 2rem;
+    }
+  
+    .container-card .card {
+      width: calc((100% / 3) - 20px);
+      margin-bottom: 0;
+    }
+  }
+  
