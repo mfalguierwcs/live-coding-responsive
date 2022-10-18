@@ -1,45 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The royal family</title>
-    <link rel="stylesheet" href="./styles/styles.css">
-</head>
-<body>
-    <header>
-        <div class="logo">
-          <img width="120" height="114" src="https://www.royal.uk/sites/all/themes/tbm/_assets/img/crest_bridge.png" alt="">
-        </div>
-        <nav>
-          <img id="mainMenu" class="burger-icon" width="25" height="25" src="https://cdn-icons-png.flaticon.com/512/5358/5358649.png" alt="">
-          <ul class="menu">
-            <li>item 1</li>
-            <li>item 2</li>
-            <li>item 3</li>
-          </ul>
-        </nav>
-      </header>
-      <main>
-        <section class="hero">
-          <img width="964" height="482" src="https://cache.cosmopolitan.fr/data/photo/w1000_ci/6d/prince-william-kate-middleton.jpg" alt="">
-        </section>
-        <h1>The royal family</h1>
-        <div class="wraper">
-        <section class="container-card">
-          <div class="card">
-            <img src="https://img.thedailybeast.com/image/upload/dpr_2.0/c_crop,h_683,w_683,x_0,y_73/c_limit,w_128/d_placeholder_euli9k,fl_lossy,q_auto/v1571569918/GettyImages-1178552106_rolvwy" width="256" height="256" alt="">
-          </div>
-          <div class="card">
-            <img src="https://img.thedailybeast.com/image/upload/dpr_2.0/c_crop,h_683,w_683,x_0,y_73/c_limit,w_128/d_placeholder_euli9k,fl_lossy,q_auto/v1571569918/GettyImages-1178552106_rolvwy" width="256" height="256" alt="">
-          </div>
-          <div class="card">
-            <img src="https://img.thedailybeast.com/image/upload/dpr_2.0/c_crop,h_683,w_683,x_0,y_73/c_limit,w_128/d_placeholder_euli9k,fl_lossy,q_auto/v1571569918/GettyImages-1178552106_rolvwy" width="256" height="256" alt="">
-          </div>
-        </section>
-          </div>
-      </main>
-      <script src="./scripts/main.js"></script>
-</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>The royal family</title>
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./images/favicon-32x32.png"
+        />
+        <link rel="stylesheet" href="./styles/styles.css" />
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <img
+                    width="120"
+                    height="114"
+                    src="./images/crest_bridge.png"
+                    alt="crest bridge logo"
+                />
+            </div>
+            <nav>
+                <img
+                    id="mainMenu"
+                    class="burger-icon"
+                    width="25"
+                    height="25"
+                    src="https://cdn-icons-png.flaticon.com/512/5358/5358649.png"
+                    alt=""
+                />
+                <ul class="menu">
+                    <li>
+                        <svg
+                            class="icon-nav"
+                            version="1.1"
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="32"
+                            height="32"
+                            viewBox="0 0 32 32"
+                        >
+                            <title>home</title>
+                            <path
+                                d="M32 18.451l-16-12.42-16 12.42v-5.064l16-12.42 16 12.42zM28 18v12h-8v-8h-8v8h-8v-12l12-9z"
+                            ></path>
+                        </svg>
+                        <span>Accueil</span>
+                    </li>
+                    <li>Other</li>
+                    <li>
+                        <img
+                            src="./icons/phone.svg"
+                            width="20px"
+                            height="20px"
+                            class="icon-nav"
+                        />Contact
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section class="hero">
+                <picture>
+                    <source
+                        srcset="images/prince-william-kate-middleton-2000.jpeg"
+                        media="(min-width: 1200px)"
+                    />
+                    <source
+                        srcset="images/prince-william-kate-middleton-1000.jpeg"
+                        media="(min-width: 600px)"
+                    />
+                    <img
+                        width="600"
+                        height="300"
+                        src="images/prince-william-kate-middleton.jpeg"
+                        alt="wiliam and kate"
+                    />
+                </picture>
+            </section>
+            <section class="p-1">
+                <h1>The royal family</h1>
+                <div class="container-card">
+                    <div class="card">
+                        <img
+                            src="https://img.thedailybeast.com/image/upload/dpr_2.0/c_crop,h_683,w_683,x_0,y_73/c_limit,w_128/d_placeholder_euli9k,fl_lossy,q_auto/v1571569918/GettyImages-1178552106_rolvwy"
+                            width="256"
+                            height="256"
+                            alt=""
+                        />
+                    </div>
+                    <div class="card">
+                        <img
+                            src="https://img.thedailybeast.com/image/upload/dpr_2.0/c_crop,h_683,w_683,x_0,y_73/c_limit,w_128/d_placeholder_euli9k,fl_lossy,q_auto/v1571569918/GettyImages-1178552106_rolvwy"
+                            width="256"
+                            height="256"
+                            alt=""
+                        />
+                    </div>
+                    <div class="card">
+                        <img
+                            src="https://img.thedailybeast.com/image/upload/dpr_2.0/c_crop,h_683,w_683,x_0,y_73/c_limit,w_128/d_placeholder_euli9k,fl_lossy,q_auto/v1571569918/GettyImages-1178552106_rolvwy"
+                            width="256"
+                            height="256"
+                            alt=""
+                        />
+                    </div>
+                </div>
+            </section>
+        </main>
+        <script src="./scripts/main.js"></script>
+    </body>
 </html>

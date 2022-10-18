@@ -11,6 +11,17 @@
   li {
     list-style-type: none;
   }
+
+  .p-1 {
+    padding: 1rem
+  }
+
+  .icon-nav {
+    fill: #111;
+    width: 20px;
+    height: auto;
+    margin-right: 0.5rem;
+  }
   
   /* design mobile first */
   header {
@@ -61,9 +72,9 @@
     height: auto;
   }
   
-  .hero {
+  /* .hero {
     display: none;
-  }
+  } */
   
   .hero img {
     width: 100%;
@@ -99,7 +110,7 @@
         padding: 0;
     }
     .logo {
-      width: 150px;
+      width: 120px;
     }
     .burger-icon {
       display: none;
@@ -118,9 +129,9 @@
       margin-right: 1rem;
     }
   
-    .hero {
+    /* .hero {
       display: initial;
-    }
+    } */
   
     h1 {
       font-size: 2rem;
